@@ -22,23 +22,25 @@ third. const. Declares a block-scoped, read-only named constant. With the keywor
 You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules. 變數的名稱,稱為 identifiers,遵從一定的規則
 
 4. Evaluating variables. 變數取值.
-A variable declared using the var or let statement with no assigned value specified has the value of undefined.
-An attempt to access an undeclared variable results in a ReferenceError exception being thrown. for example, Uncaught ReferenceError the variable is not defined.
-The undefined value behaves as false when used in a boolean context.
-The undefined value converts to NaN when used in numeric context.
-When you evaluate a null variable, the null value behaves as 0 in numeric contexts and as false in boolean contexts.
+A variable declared using the var or let statement with no assigned value specified has the value of undefined. 變數可以透過 var 或是 let 來定義，如果尚未指定數值給該變數，那麼該變數的值會是 undefined。
+An attempt to access an undeclared variable results in a ReferenceError exception being thrown. 如果嘗試去存取未定義的變數，會跳出 ReferenceError 的例外。 
+for example, Uncaught ReferenceError the variable is not defined.
+The undefined value behaves as false when used in a boolean context. 被賦予 undefined 的變數，在被當做布林值的情境下都會被視為 false.
+The undefined value converts to NaN when used in numeric context. 被賦予 undefined 的變數，在和數值進行運算之後，會被轉成非數值（NaN）.
+When you evaluate a null variable, the null value behaves as 0 in numeric contexts and as false in boolean contexts.當你對 null 進行運算，null 會自動轉換成數值 0，如果當做布林值運算，會被當成 false.
 
 5. Variable scope. 變數範圍. 
 JavaScript before ECMAScript 2015 does not have block statement scope; rather, A var variable declared within a block is local to the function (or global scope) that the block resides within. it can still been seen outside of its block.
 This behavior changes, when using the let declaration introduced in ECMAScript 2015. A let variable declared within a block is local to the block it resides within. it can not been seen outside of its block and ReferenceError will be thrown when accessing it.
  
 6. Variable hoisting. 變數提升.
-Another unusual thing about variables in JavaScript is that you can refer to a variable declared later, without getting an exception. This concept is known as hoisting; variables in JavaScript are in a sense "hoisted" or lifted to the top of the function or statement. However, variables that are hoisted return a value of undefined. So even if you declare and initialize after you use or refer to this variable, it still returns undefined.
+Another unusual thing about variables in JavaScript is that you can refer to a variable declared later, without getting an exception. 在JavaScript 中另一件有關變數不常見的事, 是你可引用一個較晚宣告的變數並且不會跳出異常。
+This concept is known as hoisting; variables in JavaScript are in a sense "hoisted" or lifted to the top of the function or statement. However, variables that are hoisted return a value of undefined. So even if you declare and initialize after you use or refer to this variable, it still returns undefined.
 Because of hoisting, all var statements in a function should be placed as near to the top of the function as possible. This best practice increases the clarity of the code.
 In ECMAScript 2015, let (const) does not hoist the variable to the top of the block. Referencing the variable in the block before the variable declaration results in a ReferenceError. The variable is in a "temporal dead zone" from the start of the block until the declaration is processed.
 
 7. Function hoisting. 函式提升.
-For functions, only the function declaration gets hoisted to the top and not the function expression.
+For functions, only the function declaration gets hoisted to the top and not the function expression. 針對函式來說，只有函式宣告式提昇到頂部，但函式表示式不被提昇至頂部。
 
 8. Global variable. 全域變數.
 Global variables are in fact properties of the global object. In web pages, the global object is window, so you can set and access global variables using the window.variable syntax.
