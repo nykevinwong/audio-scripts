@@ -1,0 +1,80 @@
+The Chapter 1. Javascript Basics. This chapter discusses JavaScript's basic grammar, variable declarations, data types and literals.
+
+1. JavaScript compared to Java. What is key differences between Java and JavaScript? How is JavaScript different from Java?
+JavaScript is Object-oriented (物件導向). No distinction between types of objects. 物件的型態之間無區別. 
+JavaScript Inheritance is through the prototype mechanism, and properties and methods can be added to any object dynamically.
+JavaScript 藉由原型機制（prototype mechanism）和屬性（properties）實行繼承。
+Java is Class-based (類別導向). Java Objects are divided into classes and instances with all inheritance through the class hierarchy. 
+Java 物件藉由類別階級（class hierarchy）而被分離至類別和所有繼承的實體（instance）中。
+Java Classes and instances cannot have properties or methods added dynamically. Java 類別和實體無法動態新增屬性和方法。
+JavaScript Variable data types are not declared (dynamic typing, loosely typed). JavaScript 變數資料型態沒有宣告就可使用（動態定型，dynamic typing）。
+Java Variable data types must be declared (static typing, strongly typed). Java 變數資料型態必須宣告才可使用（靜態定型，static typing）。
+Both JavaScript and Java Cannot automatically write to hard disk. 無法自動覆寫到硬碟。
+
+2. Declarations. There are three kinds of declarations in JavaScript.
+first. var. Declares a variable, optionally initializing it to a value.
+With the keyword var. For example, var x = 42. This syntax can be used to declare both local and global variables.
+By simply assigning it a value. For example, x = 42. If this form is used outside of a function, it declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.
+second. let. Declares a block-scoped, local variable, optionally initializing it to a value.
+third. const. Declares a block-scoped, read-only named constant. With the keyword let. For example, let y = 13. This syntax can be used to declare a block-scope local variable. 
+
+3. Variables
+You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.
+
+4. Evaluating variables
+A variable declared using the var or let statement with no assigned value specified has the value of undefined.
+An attempt to access an undeclared variable results in a ReferenceError exception being thrown. for example, Uncaught ReferenceError the variable is not defined.
+The undefined value behaves as false when used in a boolean context.
+The undefined value converts to NaN when used in numeric context.
+When you evaluate a null variable, the null value behaves as 0 in numeric contexts and as false in boolean contexts.
+
+5. Variable scope
+JavaScript before ECMAScript 2015 does not have block statement scope; rather, A var variable declared within a block is local to the function (or global scope) that the block resides within. it can still been seen outside of its block.
+This behavior changes, when using the let declaration introduced in ECMAScript 2015. A let variable declared within a block is local to the block it resides within. it can not been seen outside of its block and ReferenceError will be thrown when accessing it.
+ 
+6. Variable hoisting
+Another unusual thing about variables in JavaScript is that you can refer to a variable declared later, without getting an exception. This concept is known as hoisting; variables in JavaScript are in a sense "hoisted" or lifted to the top of the function or statement. However, variables that are hoisted return a value of undefined. So even if you declare and initialize after you use or refer to this variable, it still returns undefined.
+Because of hoisting, all var statements in a function should be placed as near to the top of the function as possible. This best practice increases the clarity of the code.
+In ECMAScript 2015, let (const) does not hoist the variable to the top of the block. Referencing the variable in the block before the variable declaration results in a ReferenceError. The variable is in a "temporal dead zone" from the start of the block until the declaration is processed.
+
+7. Function hoisting
+For functions, only the function declaration gets hoisted to the top and not the function expression.
+
+8. Global variable
+Global variables are in fact properties of the global object. In web pages, the global object is window, so you can set and access global variables using the window.variable syntax.
+Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber.
+
+9. Constants
+A constant cannot change value through assignment or be re-declared while the script is running. It must be initialized to a value.
+You cannot declare a constant with the same name as a function or variable in the same scope. 
+The properties of objects and the contents of an array assigned to constants are not protected.
+
+10. Javscript Data types.
+Six data types that are primitives:  Boolean, null, undefined, Number, String, Symbol and Object.
+Symbol is a data type that are unique and immutable. You can think of objects as named containers for values, and functions as procedures that your application can perform.
+
+11. Data type conversion
+Because JavaScript is dynamically typed, you can assign a value to a variable without variable decalartion. 
+In expressions involving numeric and string values with the + operator, JavaScript converts numeric values to strings.
+For example, the string 37 +  an integer 7 means "377". the string 37 - an integer 7 means 30. 
+In statements involving other operators, JavaScript does not convert numeric values to strings. 
+
+12. Converting strings to numbers
+3 ways to convert strings to numbers.
+1. parseInt
+2. parseFloat
+3. apply + (unary plus) operator before a string.
+
+13. Literals. You use literals to represent values in JavaScript. These are fixed values, not variables.
+
+14. Array literals
+If you put two commas without a value in between them, the array is created with undefined for the unspecified elements. 
+If you include a trailing comma at the end of the list of elements, the comma is ignored.
+Trailing commas can create errors in older browser versions and it is a best practice to remove them.
+
+15. Numeric literals
+Integers can be expressed in decimal (base 10), hexadecimal (base 16), octal (base 8) and binary (base 2).
+Use a leading zero or a leading zero O to indiciates it is in octal.
+Use a leading zero X to indiciates a hexadecimal integer literal.
+Use a leading zero B to indiciates a binary integer literal.
+
