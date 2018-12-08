@@ -1,5 +1,4 @@
 The Chapter 1. Javascript Basics. Javascript 基礎知識. This chapter discusses JavaScript's basic grammar, variable declarations, data types and literals.
-
 1. JavaScript compared to Java. What is key differences between Java and JavaScript? How is JavaScript different from Java?
 JavaScript is Object-oriented (物件導向). No distinction between types of objects. 物件的型態之間無區別. 
 JavaScript Inheritance is through the prototype mechanism, and properties and methods can be added to any object dynamically.
@@ -10,17 +9,14 @@ Java Classes and instances cannot have properties or methods added dynamically. 
 JavaScript Variable data types are not declared (dynamic typing, loosely typed). JavaScript 變數資料型態沒有宣告就可使用（動態定型，dynamic typing）。
 Java Variable data types must be declared (static typing, strongly typed). Java 變數資料型態必須宣告才可使用（靜態定型，static typing）。
 Both JavaScript and Java Cannot automatically write to hard disk. 無法自動覆寫到硬碟。
-
 2. Declarations. 宣告. There are three kinds of declarations in JavaScript.
 first. var. Declares a variable, optionally initializing it to a value. 宣告一個可隨意更改其內容的變數
 With the keyword var. For example, var x = 42. This syntax can be used to declare both local and global variables.
 By simply assigning it a value. For example, x = 42. If this form is used outside of a function, it declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.
 second. let. Declares a block-scoped, local variable, optionally initializing it to a value. 宣告一個可隨意更改其內容的區塊區域變數
 third. const. Declares a block-scoped, read-only named constant. With the keyword let. For example, let y = 13. This syntax can be used to declare a block-scope local variable. 
-
 3. Variables
 You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules. 變數的名稱,稱為 identifiers,遵從一定的規則
-
 4. Evaluating variables. 變數取值.
 A variable declared using the var or let statement with no assigned value specified has the value of undefined. 變數可以透過 var 或是 let 來定義，如果尚未指定數值給該變數，那麼該變數的值會是 undefined。
 An attempt to access an undeclared variable results in a ReferenceError exception being thrown. 如果嘗試去存取未定義的變數，會跳出 ReferenceError 的例外。 
@@ -28,52 +24,41 @@ for example, Uncaught ReferenceError the variable is not defined.
 The undefined value behaves as false when used in a boolean context. 被賦予 undefined 的變數，在被當做布林值的情境下都會被視為 false.
 The undefined value converts to NaN when used in numeric context. 被賦予 undefined 的變數，在和數值進行運算之後，會被轉成非數值（NaN）.
 When you evaluate a null variable, the null value behaves as 0 in numeric contexts and as false in boolean contexts.當你對 null 進行運算，null 會自動轉換成數值 0，如果當做布林值運算，會被當成 false.
-
 5. Variable scope. 變數範圍. 
 JavaScript before ECMAScript 2015 does not have block statement scope; rather, A var variable declared within a block is local to the function (or global scope) that the block resides within. it can still been seen outside of its block.
 This behavior changes, when using the let declaration introduced in ECMAScript 2015. A let variable declared within a block is local to the block it resides within. it can not been seen outside of its block and ReferenceError will be thrown when accessing it.
- 
 6. Variable hoisting. 變數提升.
 Another unusual thing about variables in JavaScript is that you can refer to a variable declared later, without getting an exception. 在JavaScript 中另一件有關變數不常見的事, 是你可引用一個較晚宣告的變數並且不會跳出異常。
 This concept is known as hoisting; variables in JavaScript are in a sense "hoisted" or lifted to the top of the function or statement. However, variables that are hoisted return a value of undefined. So even if you declare and initialize after you use or refer to this variable, it still returns undefined.
 Because of hoisting, all var statements in a function should be placed as near to the top of the function as possible. This best practice increases the clarity of the code.
 In ECMAScript 2015, let (const) does not hoist the variable to the top of the block. Referencing the variable in the block before the variable declaration results in a ReferenceError. The variable is in a "temporal dead zone" from the start of the block until the declaration is processed.
-
 7. Function hoisting. 函式提升.
 For functions, only the function declaration gets hoisted to the top and not the function expression. 針對函式來說，只有函式宣告式提昇到頂部，但函式表示式不被提昇至頂部。
-
 8. Global variable. 全域變數.
 Global variables are in fact properties of the global object. In web pages, the global object is window, so you can set and access global variables using the window.variable syntax.
 Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber.
-
-9. Constants. 常數.
+9. Constants. 常數
 A constant cannot change value through assignment or be re-declared while the script is running. It must be initialized to a value.
 You cannot declare a constant with the same name as a function or variable in the same scope. 
 The properties of objects and the contents of an array assigned to constants are not protected.
-
 10. Javscript Data types. 基本資料型別與物件.
 Six data types that are primitives:  Boolean, null, undefined, Number, String, Symbol and Object.
 Symbol is a data type that are unique and immutable. You can think of objects as named containers for values, and functions as procedures that your application can perform.
-
 11. Data type conversion. 資料型別轉換.
 Because JavaScript is dynamically typed, you can assign a value to a variable without variable decalartion. 
 In expressions involving numeric and string values with the + operator, JavaScript converts numeric values to strings.
 For example, the string 37 +  an integer 7 means "377". the string 37 - an integer 7 means 30. 
 In statements involving other operators, JavaScript does not convert numeric values to strings. 
-
 12. Converting strings to numbers. 字串轉數值.
 3 ways to convert strings to numbers.
 1. parseInt
 2. parseFloat
 3. apply + (unary plus) operator before a string.
-
 13. Literals. 字面值. You use literals to represent values in JavaScript. These are fixed values, not variables.
-
 14. Array literals. 陣列字面值.
 If you put two commas without a value in between them, the array is created with undefined for the unspecified elements. 
 If you include a trailing comma at the end of the list of elements, the comma is ignored.
 Trailing commas can create errors in older browser versions and it is a best practice to remove them.
-
 15. Numeric literals. 整數字面值.
 Integers can be expressed in decimal (base 10), hexadecimal (base 16), octal (base 8) and binary (base 2).
 Use a leading zero or a leading zero O to indiciates it is in octal.
