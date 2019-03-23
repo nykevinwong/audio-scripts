@@ -1,12 +1,12 @@
 PARTITIONING
 Partitioning is the underlying mechanism of quicksort, which we’ll explore next, but it’s also a useful operation on its own, so we’ll cover it here in its own section.
 To partition data is to divide it into two groups, so that all the items with a key value higher than a specified amount are in one group, and all the items with a lower key value are in another.
-You can easily imagine situations in which you would want to partition data. Maybe you want to divide your personnel records into two groups: employees who live within 15 miles of the office and those who live farther away. Or a school administrator might want to divide students into those with grade point averages higher and lower than 3.5, so as to know who deserves to be on the Dean’s list.
+You can easily imagine situations in which you would want to partition data. Maybe you want to divide your personnel records into two groups: employees who live within 15 miles of the office and those who live farther away. Or a school administrator might want to divide students into those with grade point averages higher and lower than 3 point 5, so as to know who deserves to be on the Dean’s list.
 
 The Partition Workshop Applet
-Our Partition Workshop applet demonstrates the partitioning process. Figure 7.6 shows 12 bars before partitioning, and Figure 7.7 shows them again after partitioning.
-FIGURE 7.6 has Twelve bars before partitioning.
-FIGURE 7.7 has Twelve bars after partitioning.
+Our Partition Workshop applet demonstrates the partitioning process. Figure 7 dot 6 shows 12 bars before partitioning, and Figure 7 dot 7 shows them again after partitioning.
+FIGURE 7 dot 6 has Twelve bars before partitioning.
+FIGURE 7 dot 7 has Twelve bars after partitioning.
 The horizontal line represents the pivot value, which is the value used to determine into which of the two groups an item is placed. Items with a key value less than the pivot value go in the left part of the array, and those with a greater or equal key go in the right part. In the section on quicksort, we’ll see that the pivot value can be the key value of an actual data item, called the pivot. For now, it’s just a number.
 The arrow labeled partition points to the leftmost item in the right or higher subarray. This value is returned from the partitioning method, so it can be used by other methods that need to know where the division is.
 For a more vivid display of the partitioning process, set the Partition Workshop applet to 100 bars and press the Run button. The leftScan and rightScan pointers will zip toward each other, swapping bars as they go. When they meet, the partition is complete.
@@ -15,8 +15,7 @@ After being partitioned, the data is by no means sorted; it has simply been divi
 Notice that partitioning is not stable. That is, each group is not in the same order it was originally. In fact, partitioning tends to reverse the order of some of the data in each group.
 
 The partition Program in java
-How is the partitioning process carried out? Let’s look at some example code. Listing 7.2 shows the partition.java program, which includes the partitionIt method for partitioning an array.
+How is the partitioning process carried out? Let’s look at some example code. Listing 7 dot 2 shows the partition.java program, which includes the partitionIt method for partitioning an array.
 The main routine creates an ArrayPar object that holds 16 items of type long. The pivot value is fixed at 99. The routine inserts 16 random values into ArrayPar, displays them, partitions them by calling the partitionIt method, and displays them again. Here’s some sample output:
-Pivot is 99, partition is at index 8
-You can see that the partition is successful: The first eight numbers are all smaller than the pivot value of 99; the last eight are all larger.
+Pivot is 99, partition is at index 8. You can see that the partition is successful: The first eight numbers are all smaller than the pivot value of 99; the last eight are all larger.
 Notice that the partitioning process doesn’t necessarily divide the array in half as it does in this example; that depends on the pivot value and key values of the data. There may be many more items in one group than in the other.
