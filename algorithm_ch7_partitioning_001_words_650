@@ -15,7 +15,7 @@ After being partitioned, the data is by no means sorted; it has simply been divi
 Notice that partitioning is not stable. That is, each group is not in the same order it was originally. In fact, partitioning tends to reverse the order of some of the data in each group.
 
 The partition Program in java
-How is the partitioning process carried out? Let’s look at some example code. Listing 7 dot 2 shows the partition.java program, which includes the partitionIt method for partitioning an array.
+How is the partitioning process carried out? Let’s look at some example code. Listing 7 dot 2 shows the partition dot java program, which includes the partitionIt method for partitioning an array.
 The main routine creates an ArrayPar object that holds 16 items of type long. The pivot value is fixed at 99. The routine inserts 16 random values into ArrayPar, displays them, partitions them by calling the partitionIt method, and displays them again. Here’s some sample output:
 Pivot is 99, partition is at index 8. You can see that the partition is successful: The first eight numbers are all smaller than the pivot value of 99; the last eight are all larger.
 Notice that the partitioning process doesn’t necessarily divide the array in half as it does in this example; that depends on the pivot value and key values of the data. There may be many more items in one group than in the other.
