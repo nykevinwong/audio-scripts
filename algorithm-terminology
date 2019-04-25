@@ -1,0 +1,317 @@
+資料結構與演算法：使用JAVA(第六版)
+
+Chapter　1 Java程式基礎
+1.1 初步（Preliminaries）
+1.1.1 基本型態（Base Types）
+1.2 物件和類別（Objects and Classes）
+1.2.1 建立和使用物件（Creating and Using Objects）
+1.2.2 定義類別（Defining a Class）
+1.3 特殊型態（Special Types）
+1.4 Java 運算式（Java Expressions）
+1.4.1 字面文字（Literals）
+1.4.2 運算子（Operators）
+1.4.3 型態轉換（Type Conversions）
+1.5 控制流程（Control Flow）
+1.5.1 If和Switch敘述（The If and Switch Statements）
+1.5.2 迴圈（Loops）
+1.5.3 顯式控制流敘述（Explicit Control-Flow Statements）
+1.6 輸入和輸出（Input and Output）
+1.7 Java 套件（Java Packages）
+1.8 編寫Java 程式（Writing a Java Program）
+1.8.1 設計（Design）
+1.8.2 虛擬程式碼（Pseudocode）
+1.8.3 撰寫程式（Coding）
+1.8.4 文件和樣式（Documentation and Style）
+1.8.5 測試和除錯（Testing and Debugging）
+1.9 習題
+
+Chapter 2 物件導向設計
+2.1 目標、原則與設計模式（Goals, Principles, and Patterns）
+2.1.1 物件導向設計目標（Object-Oriented Design Goals）
+2.1.2 物件導向設計原則（Object-Oriented Design Principles）
+2.1.3 設計模式（Design Patterns）
+2.2 繼承（Inheritance）
+2.2.1 Credit Card類別擴展（Extending the CreditCard Class）
+2.2.2 多型與動態配置（Polymorphism and Dynamic Dispatch）
+2.2.3 繼承階層（Inheritance Hierarchies）
+2.3 介面與抽象類別（Interfaces and Abstract Classes）
+2.3.1 java中的介面（Interfaces in Java）
+2.3.2 介面的多重繼承（Multiple Inheritance for Interfaces）
+2.3.3 抽象類別（Abstract Classes）
+2.4 異常（Exceptions）
+2.4.1 捕捉異常（Catching Exceptions）
+2.4.2 拋出異常（Throwing Exceptions）
+2.4.3 Java 異常階層（Java's Exception Hierarchy）
+2.5 轉型與泛型（Casting and Generics）
+2.5.1 轉型（Casting）
+2.5.2 泛型（Generics）
+2.6 巢狀類別（Nested Classes）
+2.7 習題
+
+Chapter 3 陣列與鏈結串列
+3.1 陣列的實際用法（Practical Uses of Arrays）
+3.1.1 在陣列存放遊戲記錄（Storing Game Entries in an Array）
+3.1.2 陣列排序（Sorting an Array）
+3.1.3 用於陣列隨機數值的java.util方法（java.util Methods for Arrays and Random Numbers）
+3.1.4 使用字串和字元陣列的簡單密碼學（Simple Cryptography with Strings and Character Arrays）
+3.1.5 二維陣列和定位遊戲（Two-Dimensional Arrays and Positional Games）
+3.2 單向鏈結串列（Singly Linked Lists）
+3.2.1 實現單向鏈結串列（Implementing a Singly Linked List Class）
+3.3 環狀鏈結串列（Circularly Linked Lists）
+3.3.1 循環式排程（Round-Robin Scheduling）
+3.3.2 設計與實現環狀鏈結串列（Designing and Implementing a Circularly Linked List）
+3.4 雙向鏈結串列（Doubly Linked Lists）
+3.4.1 實現雙向鏈結串列（Implementing a Doubly Linked List Class）
+3.5 測試相等性（Testing for Equality）
+3.5.1 測試陣列的相等性（Equivalence Testing with Arrays）
+3.5.2 測試鏈結串列的相等性（Equivalence Testing with Linked Lists）
+3.6 複製資料結構（Copying Data Structures）
+3.6.1 複製陣列（Cloning Arrays）
+3.6.2 複製鏈結串列（Cloning Linked Lists）
+3.7 習題
+
+Chapter 4 分析工具
+4.1 實證分析（Empirical Analysis）
+4.1.1超越實驗分析（Moving Beyond Experimental Analysis）
+4.2 常用數學函式（Common Mathematical Functions）
+4.2.1比較成長速率（Comparing Growth Rates）
+4.3 Big-Oh 表示法（Big-Oh Notation）
+4.3.1定義Big-Oh符號（Defining the “Big-Oh” Notation）
+4.3.2比較分析（Comparative Analysis）
+4.3.3演算法分析範例（Examples of Algorithm Analysis）
+4.4 證明方法（Proof Methods）
+4.4.1 實例證明（By Example）
+4.4.2 反向證明法（The Contra Attack）
+4.4.3 歸納法及迴圈不變式（Induction and Loop Invariants）
+4.5 習題
+
+Chapter 5 遞迴
+5.1 遞迴基礎（Foundations of Recursion）
+5.1.1 階乘函數（The Factorial Function）
+5.1.2 描繪英制尺（Drawing an English Ruler）
+5.1.3 二元搜尋（Binary Search）
+5.1.4 檔案系統（File Systems）
+5.2 遞迴分析（Recursive Analysis）
+5.3 遞迴的應用（Applications of Recursion）
+5.3.1 線性遞迴（Linear Recursion）
+5.3.2 二元遞迴（Binary Recursion）
+5.3.3 多重遞迴 (Multiple Recursion )
+5.4 使用遞迴（Using Recursion）
+5.5 遞迴的陷阱（Pitfalls of Recursion）
+5.5.1 Java中的最大遞迴深度（Maximum Recursive Depth in Java）
+5.6 習題
+
+Chapter 6 堆疊與佇列
+6.1 堆疊（Stacks）
+6.1.1 堆疊抽象資料型態（The Stack Abstract Data Type）
+6.1.2 用陣列完成的簡單堆疊實作（A Simple Array-Based Stack Implementation）
+6.1.3 用鏈結串列完成堆疊實作（Implementing a Stack with a Singly Linked List）
+6.1.4 括號及HTML 標籤配對（Matching Parentheses and HTML Tags）
+6.2 佇列（Queues）
+6.2.1 佇列抽象資料型態（The Queue Abstract Data Type）
+6.2.2 利用陣列完成佇列實作（Array-Based Queue Implementation）
+6.2.3 使用單向鏈結串列實作佇列（Implementing a Queue with a Singly Linked List）
+6.2.4 迴圈佇列（A Circular Queue）
+6.3 雙向佇列（Double-Ended Queues）
+6.3.1 雙向佇列抽象資料型態（The Deque Abstract Data Type）
+6.3.2 雙向佇列實作（Implementing a Deque）
+6.3.3 Java集合架構中的雙向佇列（Deques in the Java Collections Framework）
+6-4 習題
+
+Chapter 7 串列抽象
+7.1 串列ADT（The List ADT）
+7.2 基於陣列的串列（Array-based Lists）
+7.2.1 動態陣列（Dynamic Arrays）
+7.2.2 實現動態陣列（Implementing a Dynamic Array）
+7.2.3 動態陣列的攤銷分析（Amortized Analysis of Dynamic Arrays）
+7.2.4 Java的StringBuilder類別
+7.3 基於位置的串列（Position-Based Lists）
+7.3.1 位置（Positions）
+7.3.2 位置串列抽象資料型態（The Positional List Abstract Data Type）
+7.3.3 雙向鏈結串列實現（Doubly Linked List Implementation）
+7.4 迭代器（Iterators）
+7.4.1 可迭代介面和Java的For-Each迴圈（The Iterable Interface and Java's For-Each Loop）
+7.4.2 實現迭代器（Implementing Iterators）
+7.5 群集架構（The Collections Framework）
+7.5.1 列出Java中的迭代器（List Iterators in Java）
+7.5.2 與Positional List ADT做比較（Comparison to Our Positional List ADT）
+7.5.3 Java群集架構中基於串列的演算法（List-Based Algorithms in the Java Collections Framework）
+7.6 習題
+
+Chapter 8 樹結構
+8.1 樹的定義和性質（Trees Definitions and Properties）
+8.1.1 樹抽象資料型態（The Tree Abstract Data Type）
+8.1.2 計算深度和高度（Computing Depth and Height）
+8.2 二元樹（Binary Trees）
+8.2.1 二元樹抽象資料型態（The Binary Tree Abstract Data Type）
+8.2.2 二元樹的性質（Properties of Binary Trees）
+8.3 樹的表示方式（Tree Representations）
+8.3.1 二元樹的鏈結結構（Linked Structure for Binary Trees）
+8.3.2 基於陣列的二元樹表示方式（Array-Based Representation of a Binary Tree）
+8.3.3 一般樹的鏈結結構（Linked Structure for General Trees）
+8.4 樹遍訪演算法（Tree Traversal Algorithms）
+8.4.1 一般樹的前序和後序遍訪（Preorder and Postorder Traversals of General Trees）
+8.4.2 廣度優先樹遍訪（Breadth-First Tree Traversal）
+8.4.3 二元樹的中序遍訪（Inorder Traversal of a Binary Tree）
+8.4.4 在Java中實現樹的遍訪（Implementing Tree Traversals in Java）
+8.4.5 樹遍訪的應用（Applications of Tree Traversals）
+8.4.6 歐拉之旅（Euler Tours）
+8.5 習題
+
+Chapter 9 堆積和優先佇列
+9.1 優先佇列抽象資料型態（The Priority Queue Abstract Data Type）
+9.1.1 優先事項（Priorities）
+9.1.2 優先佇列ADT（The Priority Queue ADT）
+9.2 實施優先佇列（Implementing a Priority Queue）
+9.2.1 項目複合（The Entry Composite）
+9.2.2 使用全序比較鍵值（Comparing Keys with Total Orders）
+9.2.3 AbstractPriorityQueue基礎類別（The AbstractPriorityQueue Base Class）
+9.2.4 使用未排序的串列實現優先佇列（Implementing a Priority Queue with an Unsorted List）
+9.2.5 使用排序串列實現優先佇列（Implementing a Priority Queue with a Sorted List）1
+9.3 堆積（Heaps）
+9.3.1 堆積資料結構（The Heap Data Structure）
+9.3.2 使用堆積實現優先佇列（Implementing a Priority Queue with a Heap）
+9.3.3 基於堆積的優先佇列的分析（Analysis of a Heap-Based Priority Queue）
+9.3.4 自下而上的堆積構造 （Bottom-Up Heap Construction）
+9.3.5 使用java.util.PriorityQueue類別
+9.4 使用優先佇列排序（Sorting with a Priority Queue）
+9.4.1 選擇排序和插入排序（Selection-Sort and Insertion-Sort）
+9.4.2 堆積排序（Heap-Sort）
+9.5 適應性優先佇列（Adaptable Priority Queues）
+9.5.1 位置感知項目（Location-Aware Entries）
+9.5.2 實現適應性優先佇列（Implementing an Adaptable Priority Queue）
+9.6 習題
+
+Chapter 10 雜湊表、MAP與跳躍串列
+10.1 Map 抽象資料型態（The Map Abstract Data Type）
+10.1.1 Map ADT
+10.1.2 應用：計數單字頻率（Application: Counting Word Frequencies）
+10.1.3 AbstractMap基礎類別（An AbstractMap Base Class）
+10.1.4 簡單的未排序map實作（A Simple Unsorted Map Implementation）
+10.2 雜湊（Hashing）
+10.2.1 雜湊函數（Hash Functions）
+10.2.2 碰撞處理方案（Collision-Handling Schemes）
+10.2.3 負載因子，重組和效率（Load Factors, Rehashing, and Efficiency）
+10.2.4 Java雜湊表實作（Java Hash Table Implementation）
+10.3 排序圖抽象資料型態（The Sorted Map Abstract Data Type）
+10.3.1 排序搜尋表（Sorted Search Tables）
+10.3.2 排序map的應用（Applications of Sorted Maps）
+10.4 跳躍串列（Skip Lists）
+10.4.1 跳躍串列中的搜尋和更新操作（Search and Update Operations in a Skip List）
+10.4.2 跳躍串列的機率分析（ Probabilistic Analysis of Skip Lists）
+10.5 Sets、 Multisets、和 Multimaps
+10.5.1 Set ADT（The Set ADT）
+10.5.2 Multiset ADT
+10.5.3 Multimap ADT
+10.6 習題
+
+Chapter 11 搜尋樹結構
+11.1 二元搜尋樹（Binary Search Trees）
+11.1.1 在二元搜尋樹中搜尋（Searching Within a Binary Search Tree）
+11.1.2 插入和刪除（Insertions and Deletions）
+11.1.3 Java實作（Java Implementation）
+11.1.4 二元搜尋樹的效能（Performance of a Binary Search Tree）
+11.2 平衡搜尋樹（Java Framework for Balancing Search Trees）
+11.2.1 用於平衡搜尋樹的Java架構（Java Framework for Balancing Search Trees）
+11.3 AVL 樹（AVL Trees）
+11.3.1 更新操作（Update Operations）
+11.3.2 Java實作（Java Implementation）
+11.4 (2,4) 樹
+11.4.1 多路搜尋樹（Multiway Search Trees）
+11.4.2 (2,4)樹操作（(2,4)-Tree Operations）
+11.5 紅黑樹（Red-Black Trees）
+11.5.1 紅黑樹操作（Red-Black Tree Operations）
+11.5.2 Java實作（Java Implementation）
+11.6 伸展樹（Splay Trees）
+11.6.1 伸展（Splaying）
+11.6.2 何時伸展（When to Splay）
+11.6.3 Java實作（Java Implementation）
+11.6.4 伸展攤銷分析（Amortized Analysis of Splaying）
+11.7 習題
+
+Chapter 12 字串與動態規劃
+12.1 序言（Preliminaries）
+12.1.1 文字字串符號（Notations for Character Strings）
+12.2 樣式- 匹配演算法（Pattern-Matching Algorithms）
+12.2.1 暴力法（Brute Force）
+12.2.2 Boyer-Moore演算法（The Boyer-Moore Algorithm）
+12.2.3 Knuth-Morris-Pratt演算法
+12.3 Tries 樹（Tries）
+12.3.1 標準tries 樹（Standard Tries）
+12.3.2 壓縮tries （Compressed Tries）
+12.3.3 字尾tries （Suffix Tries）
+12.3.4 搜尋引擎索引（Search Engine Indexing）
+12.4 文字壓縮和貪婪法（Text Compression and the Greedy Method）
+12.4.1 霍夫曼編碼演算法（The Huffman Coding Algorithm）
+12.4.2 貪婪法（The Greedy Method）
+12.5 動態規劃（Dynamic Programming）
+12.5.1 矩陣鏈乘法（Matrix Chain-Product）
+12.5.2 DNA和文字序列校對（DNA and Text Sequence Alignment）
+12.6 習題
+
+Chapter 13 排序和選擇
+13.1 合併排序（Merge-Sort）
+13.1.1 各個擊破法（Divide-and-Conquer）
+13.1.2 基於陣列的Merge-Sort實現（Array-Based Implementation of Merge-Sort）
+13.1.3 合併排序的執行時間（The Running Time of Merge-Sort）
+13.1.4 合併排序和遞迴方程式（Merge-Sort and Recurrence Equations）
+13.1.5 合併排序的另類實現（Alternative Implementations of Merge-Sort）
+13.2 快速排序（Quick-Sort）
+13.2.1 隨機快速排序（Randomized Quick-Sort）
+13.2.2 快速排序的其他最佳化（Additional Optimizations for Quick-Sort）
+13.3 通過演算法特性研究排序（Studying Sorting through an Algorithmic Lens）
+13.3.1 排序的時間下限（Lower Bound for Sorting）
+13.3.2 線性時間排序：桶子排序和排序（Linear-Time Sorting: Bucket-Sort and Radix-Sort）
+13.4 比較排序演算法（Comparing Sorting Algorithms）
+13.5 選擇（Selection）
+13.5.1 修剪和搜索（Prune-and-Search）
+13.5.2 隨機快速選擇（Randomized Quick-Select）
+13.5.3 分析隨機快速選擇（Analyzing Randomized Quick-Select）
+13.6 習題
+
+Chapter 14 圖
+14.1 圖（Graphs）
+14.1.1 圖ADT （The Graph ADT）
+14.2 圖的資料結構（Data Structures for Graphs）
+14.2.1 邊串列結構（Edge List Structure）
+14.2.2 鄰接串列結構（Adjacency List Structure）
+14.2.3 鄰接Map結構（Adjacency Map Structure）
+14.2.4 鄰接矩陣結構（Adjacency Matrix Structure）
+14.2.5 Java實現（Java Implementation）
+14.3 圖的遍訪（Graph Traversals）
+14.3.1 深度優先搜尋（Depth-First Search）
+14.3.2 DFS的實施和擴展（DFS Implementation and Extensions）
+14.3.3 寬度優先搜索（Breadth-First Search）
+14.4 遞移封閉（Transitive Closure）
+14.5 有向無環圖（Directed Acyclic Graphs）
+14.5.1 拓撲排序（Topological Ordering）
+14.6 最短路徑（Shortest Paths）
+14.6.1 加權圖（Weighted Graphs）
+14.6.2 Dijkstra演算法（Dijkstra's Algorithm）
+14.7 最小生成樹（Minimum Spanning Trees）
+14.7.1 Prim-Jarnık演算法
+14.7.2 Kruskal演算法
+14.7.3 不相交的分區和聯合查找結構（Disjoint Partitions and Union-Find Structures）
+14.8 習題
+
+Chapter 15 記憶體管理與範圍樹
+15.1 記憶體管理（Memory Management）
+15.1.1 Java虛擬機器中的堆疊（Stacks in the Java Virtual Machine）
+15.1.2 在記憶體堆積中分配空間（Allocating Space in the Memory Heap）
+15.1.3 垃圾收集（Garbage Collection）
+15.2 記憶體層次結構和快取（Memory Hierarchies and Caching）
+15.2.1 記憶體系統（Memory Systems）
+15.2.2 快取策略（Caching Strategies）
+15.3 外部搜尋和B 樹（External Searching and B-Trees）
+15.3.1 (a, b)樹
+15.3.2 B樹
+15.4 外部記憶體排序（External-Memory Sorting）
+15.4.1 多路合併（Multiway Merging）
+15.5 範圍樹（Range Trees）
+15.5.1 一維範圍搜尋（One-Dimensional Range Searching）
+15.5.2 二維範圍樹（Two-Dimensional Range Trees）
+15.5.3 二維範圍搜尋（Two-Dimensional Range Searching）
+15.5.4 插入和刪除（Insertion and Deletion）
+15.5.5 優先搜尋樹（Priority Search Trees）
+15.5.6 優先範圍樹（Priority Range Trees）
+15.6 習題
